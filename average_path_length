@@ -1,0 +1,56 @@
+import os
+import networkx as nx
+
+# Function to read tree data from file and create a NetworkX graph
+def read_tree(file_path):
+    G = nx.DiGraph()
+    with open(file_path, 'r', encoding='utf-8') as f:
+        for line in f:
+            parent, child = line.strip().split('->')
+            parent = eval(parent)
+            child = eval(child)
+            parent_label = f"{parent[1]}"
+            child_label = f"{child[1]}"
+            G.add_node(parent_label, time=float(parent[2]), tweet=parent[1])
+            G.add_node(child_label, time=float(child[2]), tweet=child[1])
+            G.add_edge(parent_label, child_label)
+    return G
+
+# Function to calculate the depth of a tree
+def calculate_depth(G):
+    if not G:
+        return 0
+    root = [node for node in G.nodes if G.in_degree(node) == 0]
+    if not root:
+        return 0
+    root = root[0]
+    lengths = nx.single_source_shortest_path_length(G, root)
+    max_depth = max(lengths.values())
+    return max_depth
+
+# Function to find the average depth of trees in a directory
+def find_average_depth(directory):
+    total_depth = 0
+    num_files = 0
+    for filename in os.listdir(directory):
+        file_path = os.path.join(directory, filename)
+        if os.path.isfile(file_path):
+            G = read_tree(file_path)
+            depth = calculate_depth(G)
+            total_depth += depth
+            num_files += 1
+    average_depth = total_depth / num_files if num_files > 0 else 0
+    return average_depth
+
+# Directories for fake and real news
+directories = {
+    'fake_news_twitter15': './processed_data15/false_trees',  # Update this to the correct path if necessary
+    'fake_news_twitter16': './processed_data16/false_trees',  # Update this to the correct path if necessary
+    'real_news_twitter15': './processed_data15/true_trees',  # Update this to the correct path if necessary
+    'real_news_twitter16': './processed_data16/true_trees'   # Update this to the correct path if necessary
+}
+
+# Calculate and print the average depth for each directory
+for key, directory in directories.items():
+    average_depth = find_average_depth(directory)
+    print(f"Average depth for {key}: {average_depth:.2f}")

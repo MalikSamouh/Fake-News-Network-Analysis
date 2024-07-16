@@ -1,0 +1,206 @@
+Metric: number_of_nodes
+  true:
+    Min: 89
+    Mean: 329.4489247311828
+    Max: 2864
+  false:
+    Min: 98
+    Mean: 356.9432432432432
+    Max: 2972
+  unverified:
+    Min: 57
+    Mean: 286.47860962566847
+    Max: 2821
+  non-rumor:
+    Min: 228
+    Mean: 638.8208556149733
+    Max: 2991
+Metric: number_of_edges
+  true:
+    Min: 90
+    Mean: 332.30645161290323
+    Max: 2914
+  false:
+    Min: 97
+    Mean: 361.64324324324326
+    Max: 2997
+  unverified:
+    Min: 56
+    Mean: 291.43048128342247
+    Max: 2833
+  non-rumor:
+    Min: 227
+    Mean: 644.0320855614973
+    Max: 3009
+Metric: cascade_size
+  true:
+    Min: 88
+    Mean: 328.4489247311828
+    Max: 2863
+  false:
+    Min: 97
+    Mean: 355.9432432432432
+    Max: 2971
+  unverified:
+    Min: 56
+    Mean: 285.47860962566847
+    Max: 2820
+  non-rumor:
+    Min: 227
+    Mean: 637.8208556149733
+    Max: 2990
+Metric: tree_depth
+  true:
+    Min: 2
+    Mean: 4.260416666666667
+    Max: 10
+  false:
+    Min: 2
+    Mean: 4.2695035460992905
+    Max: 9
+  unverified:
+    Min: 3
+    Mean: 4.378205128205129
+    Max: 10
+  non-rumor:
+    Min: 3
+    Mean: 4.925373134328358
+    Max: 13
+Metric: in_degree_distribution
+  true:
+    Min: 0
+    Mean: 1.0086736567255519
+    Max: 15
+  false:
+    Min: 0
+    Mean: 1.013167359486329
+    Max: 20
+  unverified:
+    Min: 0
+    Mean: 1.017285310286253
+    Max: 13
+  non-rumor:
+    Min: 0
+    Mean: 1.008157576417112
+    Max: 12
+Metric: out_degree_distribution
+  true:
+    Min: 0
+    Mean: 1.0086736567255519
+    Max: 2500
+  false:
+    Min: 0
+    Mean: 1.013167359486329
+    Max: 2286
+  unverified:
+    Min: 0
+    Mean: 1.017285310286253
+    Max: 2197
+  non-rumor:
+    Min: 0
+    Mean: 1.008157576417112
+    Max: 2450
+Metric: propagation_delay_min
+  true:
+    Min: -578.82
+    Mean: -1.555967741935484
+    Max: 0.0
+  false:
+    Min: -497.28
+    Mean: -3.4995135135135134
+    Max: 0.0
+  unverified:
+    Min: -13159.9
+    Mean: -37.071604278074865
+    Max: 0.0
+  non-rumor:
+    Min: -112.27
+    Mean: -0.7003208556149733
+    Max: 0.0
+Metric: propagation_delay_mean
+  true:
+    Min: 7.13848
+    Mean: 1524.367214744844
+    Max: 68007.30439666238
+  false:
+    Min: 20.094017094017094
+    Mean: 10531.509515193033
+    Max: 2370322.695088132
+  unverified:
+    Min: 19.04939313984169
+    Mean: 1468.4561596686149
+    Max: 128083.5764935065
+  non-rumor:
+    Min: 11.539342105263158
+    Mean: 854.8830700597732
+    Max: 36609.80894946808
+Metric: propagation_delay_max
+  true:
+    Min: 64.6
+    Mean: 84103.59069892473
+    Max: 1469879.28
+  false:
+    Min: 184.38
+    Mean: 116055.24029729729
+    Max: 2675420.55
+  unverified:
+    Min: 283.57
+    Mean: 42979.340401069516
+    Max: 983005.18
+  non-rumor:
+    Min: 856.33
+    Mean: 66492.80537433155
+    Max: 443062.4
+Metric: reaction_time_min
+  true:
+    Min: -578.82
+    Mean: -1.555967741935484
+    Max: 0.0
+  false:
+    Min: -497.28
+    Mean: -3.4995135135135134
+    Max: 0.0
+  unverified:
+    Min: -13159.9
+    Mean: -37.071604278074865
+    Max: 0.0
+  non-rumor:
+    Min: -112.27
+    Mean: -0.7003208556149733
+    Max: 0.0
+Metric: reaction_time_mean
+  true:
+    Min: 7.13848
+    Mean: 1524.367214744844
+    Max: 68007.30439666238
+  false:
+    Min: 20.094017094017094
+    Mean: 10531.509515193033
+    Max: 2370322.695088132
+  unverified:
+    Min: 19.04939313984169
+    Mean: 1468.4561596686149
+    Max: 128083.5764935065
+  non-rumor:
+    Min: 11.539342105263158
+    Mean: 854.8830700597732
+    Max: 36609.80894946808
+Metric: reaction_time_max
+  true:
+    Min: 64.6
+    Mean: 84103.59069892473
+    Max: 1469879.28
+  false:
+    Min: 184.38
+    Mean: 116055.24029729729
+    Max: 2675420.55
+  unverified:
+    Min: 283.57
+    Mean: 42979.340401069516
+    Max: 983005.18
+  non-rumor:
+    Min: 856.33
+    Mean: 66492.80537433155
+    Max: 443062.4
+Metric: betweenness_centrality
+Metric: closeness_centrality
