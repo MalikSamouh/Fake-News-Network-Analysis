@@ -169,3 +169,6 @@ Implement fact-checking mechanisms, label fake content, and restrict sharing and
    ```
 
 5. **Visualize the graphs**:
+   ```bash
+   python visualize_graph.py
+   ```
